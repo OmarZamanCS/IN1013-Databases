@@ -13,6 +13,6 @@ CREATE TABLE petEvent (
     eventdate DATE,
     eventtype varchar(40),
     remark varchar(255),
-    FOREIGN KEY (petname) REFERENCES petPet(petname)
+    FOREIGN KEY (petname) REFERENCES petPet(petname),
     PRIMARY KEY (petname, eventdate)
 );
